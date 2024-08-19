@@ -6,7 +6,7 @@ export default function Square(props) {
 
   return (
     <button 
-        className="border flex items-center justify-center min-w-28 min-h-28 font-semibold text-3xl cursor-pointer"
+        className="border flex items-center justify-center min-w-28 min-h-28 font-bold text-5xl cursor-pointer"
         onClick={onSquareClick}
     >
         {value}

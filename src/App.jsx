@@ -8,7 +8,11 @@ function App() {
 
   const winner = calculateWinner(squares);
   let status;
-  winner ? status = "Winner: " + winner : status = "Next Player: " + (xIsNext ? "X" : "O");
+  winner ? 
+    status = "Winner: " + winner :
+    squares.includes(null) ? 
+    status = "Next Player: " + (xIsNext ? "X" : "O") :
+    status = "It's a draw!";
 
   const handleClick = (i) => {
     if (squares[i] || winner) return;
